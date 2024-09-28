@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Домашняя работа №2 Условный оператор");
@@ -17,13 +19,13 @@ public class Main {
         System.out.println("_____________________Задание 2_______________________");
 
         int clientOS1 = 0;
-        int year = 2010;
+        int clientDeviceYear  = 2010;
 
-        if (clientOS1 == 0 && year < 2015) {
+        if (clientOS1 == 0 && clientDeviceYear  < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS1 == 0 && year >= 2015) {
+        } else if (clientOS1 == 0 && clientDeviceYear  >= 2015) {
             System.out.println("Установите обычную версию приложения для iOS по ссылке");
-        } else if (clientOS1 == 1 && year >= 2015) {
+        } else if (clientOS1 == 1 && clientDeviceYear  >= 2015) {
             System.out.println("Установите обычную версию приложения для Android по ссылке");
         } else {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
@@ -64,10 +66,7 @@ public class Main {
         System.out.println("_____________________Задание 5_______________________");
 
         int monthNumber = 12;
-        if (monthNumber < 1 || monthNumber > 12)
-        {
-            System.out.println("Ошибка, введите корректное цисло месяца");
-        }
+
         switch (monthNumber) {
             case 3, 4, 5:
                 System.out.println(monthNumber + "-ый месяц принадлежит к весне");
@@ -81,9 +80,9 @@ public class Main {
             case 12, 1, 2:
                 System.out.println(monthNumber + "-ый месяц принадлежит к зиме");
                 break;
-
-
+            default: System.out.println("Ошибка, введите корректное цисло месяца");
         }
+
         System.out.println("____________________________________________________");
 
 
